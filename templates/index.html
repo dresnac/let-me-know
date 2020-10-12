@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="titulo">
+    <h1 class="titulo__h1">LET ME KNOW</h1>
+</div>
+
+
+
+<div class="flex-container">
+    <form class="form" action="/busqueda", method="POST">
+        <div class="form__section">
+            <input type="text" class="form__input" name="Tema Principal" placeholder="Tema Principal">   
+            <input type="text" class="form__input" name="Subtema" placeholder="Subtema">
+            <button type="submit" class="button">Buscar</button>
+        </div> 
+    </form>
+
+</div>
+
+<div class="subtitulo">
+    <h3 class="subtitulo__h3">automatiza el conocimiento</h3>
+</div>
+
+<footer class="footer">
+    <p class="footer__p">
+        <i class="fab fa-instagram"><a href="#" class="footer__a" target="_BLANK">Instagram del desarrollador</a></i>
+        <i class="fas fa-paper-plane"><a href="#" class="footer__a" target="_BLANK">Web del desarrollador</a></i>
+    </p>
+
+    <b class="footer__b">&copy; Let Me Know 2020</b>
+</footer>
+
+{% endblock %}

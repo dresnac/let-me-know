@@ -1,0 +1,254 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.titulo {
+    margin: auto;
+    margin-top: 150px;
+    font-size: 35px;
+}
+
+.titulo__h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form {
+    min-width: 400px;
+    flex: 2;
+    text-align: center;
+}
+
+.form__input {
+    width: 20%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #333;
+    color: #333;
+    padding-left: 5px;
+}
+
+.form__input::placeholder {
+    color: #333;
+    opacity: .5;
+}
+
+.button {
+    background-color: #444;
+    border: none;
+    height: 30px;
+    width: 80px;
+    border-radius: 10%;
+    font-family: 'Oswald', sans-serif;
+    color: #777;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.button:active {
+    cursor: progress;  
+}
+
+.subtitulo {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.subtitulo__h3{
+    font-size: 1.5em;
+    font-family: 'Playball', cursive;
+    color: #aaa;
+    opacity: .5;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #353f57;
+    opacity: 0.5;
+    text-align: center;
+    
+}
+
+.footer__b {
+    display: inline-block;
+    margin-top: 30px;
+    color: #222;
+}
+
+.footer__p {
+    display: block;
+    margin-top: 15px;
+    color: #222;
+}
+
+.footer__a{
+    font-weight: 200;
+    text-decoration: none;
+    color: #222;
+    padding-left: 5px;
+    padding-right: 12px;
+}
+
+
+.Navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #353f57;
+    opacity: 0.5;
+    text-align: center;
+    border: 2px solid #606c88;
+}
+
+.Navbar__a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: #aaa;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.Navbar__b {
+    display: inline-block;
+    color: #aaa;
+    margin-right: 50px;
+    margin-top: 10px;
+    transition: all .5s;
+    border: 1px solid #111;
+    padding: 5px;
+    border-radius: 13%;
+    background-color: #222;
+    box-shadow: 1px 1px 5px 0 #000;
+}
+
+.Navbar__b:hover {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.contenido__p {
+    background-color: #353f57;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.resumen {
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.resumen__titulo {
+    border-bottom: 2px solid #fff;
+    text-shadow: 1px 1px 20px 0 #000;
+}
+
+.resumen__b {
+    font-weight: 100;
+    border: none;
+}
+
+.links {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.links__p {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #353f57;
+    opacity: 0.75;
+}
+
+.links__a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #222;
+    color: #777;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 9px;
+    border-radius: 7%;
+    box-shadow: 1px 1px 5px 0 #000;
+}
+
+.links__a:hover {
+    background-color: #444;
+    color: #777;
+}
+
+.forma {
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #3b465f;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #fff;
+    box-shadow: 1px 1px 10px 0 #111;
+    
+}
+
+.forma__h2 {
+    text-shadow: 1px 1px 15px 0 #000;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.forma__p {
+    text-align: justify;
+}
+
+.forma-bottom {
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #3b465f;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #fff;
+    box-shadow: 1px 1px 10px 0 #111;
+}
+
+

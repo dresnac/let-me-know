@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="resumen">
+    <b class="resumen__titulo">Mostrando resumenes para:</b><b class="resumen__b"> {{Tema_Principal}}, {{Subtema}}</b>
+</div>
+
+<div class="contenido">
+    {% for resumen in Resumenes %}
+        <p class="contenido__p">
+            {% for palabras in resumen %}
+                {{palabras}}
+            {% endfor %}
+        </p>
+    {% endfor %}
+</div>
+
+<div class="links">
+    <p class="links__p">Links de donde se extrajo la información:</p>
+    {% for web in Link%}
+        <a class="links__a" href="{{web}}">{{web}}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}

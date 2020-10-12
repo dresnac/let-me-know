@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Let Me Know</title>
+    <link rel="stylesheet" type="text/css" href="static/estilo.css">
+    <link rel="stylesheet" type="text/css" href="static/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playball&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72be68ea0e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <div class="Navbar">
+
+        <b class="Navbar__b">
+            <i class="fas fa-home"><a class="Navbar__a" href="/">Home</a></i> 
+        </b>
+        <b class="Navbar__b">
+            <i class="fas fa-question-circle"><a class="Navbar__a" href="/uso">Forma De Uso</a></i>
+        </b>
+
+    </div>
+
+    <div class="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
