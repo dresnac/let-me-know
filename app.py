@@ -11,11 +11,11 @@ from urllib.request import FancyURLopener
 
 app = Flask(__name__)
 
-@app.route('https://app-letmeknow.herokuapp.com/')
+@app.route('/')
 def Index():
     return render_template('index.html')
 
-@app.route('https://app-letmeknow.herokuapp.com/busqueda', methods=['POST'])
+@app.route('/busqueda', methods=['POST'])
 def busqueda():
     if request.method == 'POST':
         Tema_Principal = request.form['Tema Principal']
@@ -134,7 +134,7 @@ def busqueda():
 def Pruebas():
     return render_template('pruebas.html')
 
-@app.route('https://app-letmeknow.herokuapp.com/uso')
+@app.route('/uso')
 def Uso():
     return render_template('uso.html')
 
